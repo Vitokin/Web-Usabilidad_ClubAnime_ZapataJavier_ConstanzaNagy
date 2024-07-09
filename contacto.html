@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Club de Animé</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagenes/logo.png" alt="Logo del Club de Animé" class="logo">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="principios.html">Quienes Somos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="intro-message">
+                <p>¿Te interesaría ser parte de nuestro equipo? ¿Tienes alguna sugerencia? ¡Envíanos un mensaje!</p>
+                <p>Nos puedes encontrar presencialmente en Bellavista 0121, Providencia, Región Metropolitana. De 15hrs a 18hrs los lunes y jueves.</p>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/sayori.png" alt="Monachina Contacto" class="contact-image">
+            </div>
+            <section class="contact-form">
+                <form action="javascript:void(0);" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ubicación">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje" required rows="4"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Club de Animé OTAKON. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

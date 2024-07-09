@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    background: linear-gradient(135deg, #c05276, #874d68);
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+header {
+    background-color: #353854;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img.logo {
+    height: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 5px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #874d68;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+header nav ul li a:hover {
+    background-color: #777;
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: white;
+    margin: 0.1em 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h6 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.latest-news {
+    max-width: 800px;
+    text-align: left;
+}
+
+.latest-news h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.latest-news p,
+.latest-news ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.latest-news ul {
+    padding-left: 20px;
+}
+
+.latest-news ul li {
+    list-style-type: disc;
+}
+
+.news-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/*Contacto.html*/
+
+.contact-form {
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #c05276;
+    border-radius: 6px;
+    background-color: #ffffff;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4B7F69;
+    box-shadow: 0 0 6px #4B7F69;
+}
+
+.contact-form button {
+    background-color: #c05276;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #874d68;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro-message p {
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.contact-image {
+    width: 60%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    position: relative;
+}
+
+/*recomendaciones*/
+
+.recommendations {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #353854;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.recommendations article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+.recommendations h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.recommendations p {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+/*Trabajos*/
+
+.works {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #353854;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.works h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.works p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #dddddd;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
